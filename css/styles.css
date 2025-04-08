@@ -223,3 +223,6 @@
     z-index: 1;
     max-width: 500px;
 }
+    #bomb:hover { /*This is what happens when you hover over the character images*/
+        opacity: 0.35;
+    }
