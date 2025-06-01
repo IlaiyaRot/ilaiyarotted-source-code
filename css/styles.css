@@ -279,9 +279,9 @@ a {
     background-size: 6%;
     border: solid #313131;
     margin: 1%;
-    overflow: break-word;
+    overflow: scroll;
     height: 40vh;
-    width: 30%;
+    width: 29.7%;
     font-family: MS PGothic;
     font-size: 0.7vw;
     padding: 1%;
@@ -310,7 +310,10 @@ a {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     border: inset #313131;
-    background-color: white;
+    /*background-color: white;*/
+    background-image: url(../images/pride_month_background.png);
+    background-size: 7.6%;
+    /*AT THE END OF JUNE COMMENT ABOVE OUT!!!*/
 }
 
 .musou-thumbnail img {
