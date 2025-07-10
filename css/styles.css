@@ -310,10 +310,9 @@ a {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     border: inset #313131;
-    /*background-color: white;*/
-    background-image: url(../images/pride_month_background.png);
-    background-size: 7.6%;
-    /*AT THE END OF JUNE COMMENT ABOVE OUT!!!*/
+    background-color: white;
+    /*background-image: url(../images/pride_month_background.png);
+    background-size: 7.6%; PRIDE MONTH BANNER*/
 }
 
 .musou-thumbnail img {
