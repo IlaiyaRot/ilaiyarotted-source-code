@@ -34,6 +34,11 @@ a {
     height: 6vh;
     width: 50%;
 }
+            @-moz-document url-prefix() {
+                .marquee {
+                    margin-bottom: 0.3vh
+                }
+            }
     .marqueev {
         background-color: #ffb7b7;
         background-image: url(../images/master-system-background.webp);
@@ -106,6 +111,10 @@ a {
                 .sidebar ol { /*This is the left sidebar link stuff IN FIREFOX ONLY TO FIX A BUG*/
                     background-color: #313131;
                 }
+                .sidebar li { /*This is to fix the border colors on the left sidebar in Firefox*/
+                    border-bottom: inset #000000;
+                    border-right: inset #000000;
+                }
             }
         .sidebar li :active { /*This is just to prevent the text within the boxes getting their own border when clicked on*/
             border: none;
@@ -114,6 +123,12 @@ a {
             border: outset #313131;
             filter: brightness(100%);
         }
+            @-moz-document url-prefix() {
+                #sidebar-active {
+                    border-top: outset #000000;
+                    border-left: outset #000000;
+                }
+            }
 
 .sidebar-right { /*This is the RIGHT sidebar box*/
     border-style: solid;
@@ -151,6 +166,15 @@ a {
             background-color: #212121;
             filter: brightness(80%);
         }
+            @-moz-document url-prefix() {
+                .sidebar-right img {
+                    border-top: outset #000000;
+                    border-left: outset #000000;
+                }
+                .sidebar-right a :active {
+                    border: inset #000000;
+                }
+            }
 
 .main-text { /*This is for the main center text box*/
     background-image: url(../images/background-block-pink.webp);
@@ -193,15 +217,15 @@ a {
             position: relative;
             margin-left: auto;
             margin-right: auto;
-            border: inset, #313131;
+            border-style: inset;
+            border-color: #313131;
             margin-top: 1%;
             margin-bottom: 1%;
             width: 100%;
         }
             @-moz-document url-prefix() {
                 .main-text-paragraph img {
-                    border-style: solid;
-                    border-color: #313131;
+                    border-color: black;
                 }
             }
             .side-by-side-img {
@@ -219,6 +243,9 @@ a {
                     margin: 0%;
                     padding: 0%;
                 }
+                    #side-by-side-column-3 ol {
+                        columns: 3;
+                    }
             .small-img {
                 position: relative;
                 margin-left: auto;
@@ -238,6 +265,14 @@ a {
                 margin-bottom: 1%;
                 width: 50%;
             }
+            .medium-large-img {
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 1%;
+                margin-bottom: 1%;
+                width: 65%;
+            }
             .large-img {
                 position: relative;
                 margin-left: auto;
@@ -246,6 +281,18 @@ a {
                 margin-bottom: 1%;
                 width: 80%;
             }
+                #front-page-ilaiya-img {
+                    width: 60%;
+                    margin-top: 5%;
+                    margin-left: -75%;
+                    position: relative;
+                    z-index: 1;
+                }
+                    @-moz-document url-prefix() {
+                        #front-page-ilaiya-img {
+                            margin-top: 0%;
+                        }
+                    }
     .main-text-paragraph-right {
         float: right;
         margin: 1%;
@@ -268,11 +315,6 @@ a {
             font-size: 0.85vw;
             margin: 2%;
         }
-            @-moz-document url-prefix() {
-                .main-text-paragraph-right {
-                    height: 50vh;
-                }
-            }
 
 .scrollbox { /*This is for scrollboxes*/
     background-image: url(../images/master-system-background.webp);
@@ -280,7 +322,7 @@ a {
     border: solid #313131;
     margin: 1%;
     overflow: scroll;
-    height: 40vh;
+    height: 50vh;
     width: 29.7%;
     font-family: MS PGothic;
     font-size: 0.7vw;
@@ -296,13 +338,23 @@ a {
             @-moz-document url-prefix() {
                 .scrollbox {
                     height: 50vh;
+                    border: solid #313131;
+                }
+                .scrollbox hr {
+                    border-bottom: inset #000000;
+                    border-right: inset #000000;
                 }
             }
-            @media only screen and (max-height: 400px) {
-                .scrollbox {
-                    padding: 0%;
+                @media only screen and (max-height: 700px) {
+                    .scrollbox {
+                        padding: 0%;
+                    }
                 }
-            }
+                @media only screen and (max-height: 400px) {
+                    .scrollbox {
+                        border-right: none;
+                    }
+                }
 
 .logo {
     margin: 1%;
@@ -376,6 +428,10 @@ a {
         #bomb-dw2 {
             right: 10%;
             max-width: 15%;
+        }
+        #bomb-sw {
+            right: 1%;
+            min-width: 30%;
         }
 
 #failure {
