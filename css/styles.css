@@ -1,10 +1,9 @@
 :root {
     background-attachment: fixed;
     background-color: #ffbcd6d0;
-    background-image: linear-gradient(to bottom, rgba(255,153,153,0) 0%,rgba(255,153,153,0) 75%,rgb(70, 135, 255) 100%), url(../images/fate-extra-background.webp);
+    background-image: linear-gradient(to bottom, rgba(70, 135, 255, 0) 0%,rgba(255,153,153,0) 75%,rgb(70, 135, 255) 100%), url(../images/common/backgrounds/ilaiyarotted-background-tile.webp);
     background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 15%;
     font-family: MS PGothic;
     font-size: 1vw;
 }
@@ -22,7 +21,7 @@ a {
 
 .marquee {
     background-color: #ffb7b7;
-    background-image: url(../images/master-system-background.webp);
+    background-image: url(../images/common/backgrounds/master-system-background.webp);
     background-size: 2.5%;
     border-style: solid;
     border-radius: 1vw;
@@ -41,7 +40,7 @@ a {
             }
     .marqueev {
         background-color: #ffb7b7;
-        background-image: url(../images/master-system-background.webp);
+        background-image: url(../images/common/backgrounds/master-system-background.webp);
         background-size: 25%;
         border-style: solid;
         border-radius: 1vw;
@@ -177,7 +176,7 @@ a {
             }
 
 .main-text { /*This is for the main center text box*/
-    background-image: url(../images/background-block-pink.webp);
+    background-image: url(../images/common/backgrounds/background-block-pink.webp);
     background-size: 5%;
     border-style: solid;
     border-color: #313131;
@@ -198,7 +197,7 @@ a {
         border: inset #313131;
         overflow-wrap: break-word;
         background-color: #ffffff;
-        background-image: url(../images/master-system-background.webp);
+        background-image: url(../images/common/backgrounds/master-system-background.webp);
         background-size: 2.5%;
     }
         .main-text-paragraph h2 {
@@ -254,9 +253,14 @@ a {
                 margin-bottom: 1%;
                 width: 12%;
             }
-                #ochimusha-title {
-                    border: none;
-                }
+            .small-medium-img {
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 1%;
+                margin-bottom: 1%;
+                width: 25%;
+            }
             .medium-img {
                 position: relative;
                 margin-left: auto;
@@ -265,6 +269,9 @@ a {
                 margin-bottom: 1%;
                 width: 50%;
             }
+                #ochimusha-title {
+                    border: none;
+                }
             .medium-large-img {
                 position: relative;
                 margin-left: auto;
@@ -304,7 +311,7 @@ a {
         border: inset #313131;
         overflow-wrap: break-word;
         background-color: #ffbcd6;
-        background-image: url(../images/master-system-background.webp);
+        background-image: url(../images/common/backgrounds/master-system-background.webp);
         background-size: 3%;
     }
         .main-text-paragraph-right h3 {
@@ -317,7 +324,7 @@ a {
         }
 
 .scrollbox { /*This is for scrollboxes*/
-    background-image: url(../images/master-system-background.webp);
+    background-image: url(../images/common/backgrounds/master-system-background.webp);
     background-size: 6%;
     border: solid #313131;
     margin: 1%;
@@ -363,7 +370,7 @@ a {
     padding-bottom: 0.5%;
     border: inset #313131;
     background-color: white;
-    /*background-image: url(../images/pride_month_background.png);
+    /*background-image: url(../images/common/backgrounds/pride-month-background.png);
     background-size: 7.6%; PRIDE MONTH BANNER*/
 }
 
@@ -432,6 +439,11 @@ a {
         #bomb-sw {
             right: 1%;
             min-width: 30%;
+        }
+        #bomb-was {
+            right: 8%;
+            min-width: 20%;
+            max-width: 20%;
         }
 
 #failure {
