@@ -442,6 +442,7 @@ a {
         }
         #bomb-was {
             right: 8%;
+            top: 34%;
             min-width: 20%;
             max-width: 20%;
         }
@@ -449,6 +450,12 @@ a {
             right: 4%;
             min-width: 25%;
             max-width: 25%;
+        }
+        #bomb-mbz {
+            right: 8%;
+            top: 29%;
+            min-width: 20%;
+            max-width: 20%;
         }
 
 #failure {
