@@ -370,8 +370,8 @@ a {
     padding-bottom: 0.5%;
     border: inset #313131;
     background-color: white;
-    /*background-image: url(../images/common/backgrounds/pride-month-background.png);
-    background-size: 7.6%; PRIDE MONTH BANNER*/
+    /*TEMPORARY PRIDE MONTH BANNER*/background-image: url(../images/common/backgrounds/pride-month-background.png);
+    background-size: 7.6%; /*PRIDE MONTH BANNER*/
 }
 
 .musou-thumbnail img {
@@ -422,6 +422,9 @@ a {
     .bomb:hover { /*This is what happens when you hover over the character images*/
         opacity: 0.35;
     }
+        #bomb-karulau {
+            top: 28%;
+        }
         #bomb-ochimusha {
             right: 12%;
             top: 35%;
