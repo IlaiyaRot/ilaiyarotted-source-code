@@ -370,8 +370,8 @@ a {
     padding-bottom: 0.5%;
     border: inset #313131;
     background-color: white;
-    /*TEMPORARY PRIDE MONTH BANNER*/background-image: url(../images/common/backgrounds/pride-month-background.png);
-    background-size: 7.6%; /*PRIDE MONTH BANNER*/
+    /*background-image: url(../images/common/backgrounds/pride-month-background.png);
+    background-size: 7.6%; TEMPORARY PRIDE MONTH BANNER*/
 }
 
 .musou-thumbnail img {
